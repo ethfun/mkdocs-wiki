@@ -1,0 +1,110 @@
+site_name: To Collect & To Construct & To Explore 😋🥝🥭🍉🍒🍍🤪️6️⃣
+site_url: https://example.com/
+
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: squidfunk/mkdocs-material
+
+
+nav:
+  - Introduction: 'index.md'
+  - Explore:
+    - explore: 'exploration/explore.md'
+  - Notes:
+    - tech:
+      - presentation:
+        - agile: 'notes/tech/presentation/agile.md'
+        - test: 'notes/tech/presentation/test.md'
+      - spring:
+        - Q/A: 'notes/tech/spring/spring.md'
+        - ioc: 'notes/tech/spring/IOC.md'
+        - bean: 'notes/tech/spring/Bean.md'
+    - mind:
+      - mvp: 'notes/MVP.md'
+  - HowTo:
+    - demo: 'howto/wiki.md'
+    - how-to-analyze: 'howto/analysis.md'
+    - how-to-hold-meeting: 'howto/effectively-meeting.md'
+  - Reading:
+    - list : 'reading-radar/list.md'
+  - Ttt:
+    - tttaD: 'ttta/ttta-demo.md'
+  - Voc:
+    - lexical: 'vocabulary/lexical.md'
+  - Case: 'case.md'
+  - About: 'about.md'
+  - Links: 'links.md'
+
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: green
+  font:
+    text: Comic Neue
+  locale: en
+  highlightjs: true
+  shortcuts: #
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+#  custom_dir: overrides  # For customize
+
+extra:
+  social:
+  - icon: fontawesome/brands/twitter
+    link: https://twitter.com/squidfunk
+    name: where is twitter
+  - icon: fontawesome/brands/github
+    link: https://github.com/squidfunk
+    name: where is github
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.emoji: #
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - admonition
+  - attr_list
+
+##################################   Plugins   #####################################
+plugins:
+  - search
+  - mermaid2
+#        version: 8.7.0
+#        arguments:
+#          theme: blue
+#          securityLevel: 'loose'
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+#  - js/extra.js
+
+
+copyright: Copyright © 2021 Maintained by L.C
