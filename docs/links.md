@@ -4,6 +4,7 @@
 
 ### Explore
 - [synthesia](https://www.synthesia.io/)
+- [waitbutwhy](https://waitbutwhy.com)
 - [frontendchecklist](https://frontendchecklist.io/)
 - [design pattern & refactor](https://refactoring.guru/)
 

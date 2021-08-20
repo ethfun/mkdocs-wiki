@@ -2,6 +2,9 @@
 
 
 !!! links
+    === "How to Pick a Career (That Actually Fits You)"
+        - https://waitbutwhy.com/2018/04/picking-career.html
+        
     === "CAP"
         - https://codahale.com/you-cant-sacrifice-partition-tolerance
         - http://highscalability.com/blog/2011/11/23/paper-dont-settle-for-eventual-scalable-causal-consistency-f.html

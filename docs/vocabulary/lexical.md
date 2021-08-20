@@ -49,7 +49,7 @@
         - I made peace with it
         - I have bet my career on the importance of depth
         - I steer them along the same path
-    
+        
     === "2021-8-20"
         - "Putting Time In Perspective"
             - put time in perspective
