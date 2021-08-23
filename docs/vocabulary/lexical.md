@@ -25,6 +25,7 @@
 
 !!! Vocs
     === "2021-07-27 Making sense of MVP (Minimum Viable Product) – and why I prefer Earliest Testable/Usable/Lovable"
+        - make sense of MVP
         - the product is most likely ==riddled with== design flaws based on incorrect assumptions about what people need. 
         - After ==playing around with== it in the office
         - The bicycle may turn out to be a much better product than the car originally envisioned

@@ -10,7 +10,7 @@ nav:
   - Explore:
     - explore: 'exploration/explore.md'
   - Notes:
-    - tech:
+    - Tech:
       - presentation:
         - agile: 'notes/tech/presentation/agile.md'
         - test: 'notes/tech/presentation/test.md'
@@ -18,8 +18,9 @@ nav:
         - Q/A: 'notes/tech/spring/spring.md'
         - ioc: 'notes/tech/spring/IOC.md'
         - bean: 'notes/tech/spring/Bean.md'
-    - mind:
-      - mvp: 'notes/MVP.md'
+    - Posts:
+      - mvp: 'reading-radar/Making sense of MVP.md'
+      - deep-understanding: 'reading-radar/Will deep understanding still be valuable.md'
   - HowTo:
     - demo: 'howto/wiki.md'
     - how-to-analyze: 'howto/analysis.md'

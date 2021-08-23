@@ -4,7 +4,8 @@
 - how many ways to definite bean?
     - XML file
     - Properties file
-    - Annotation config
+    - Annotation based config
+    - Java based config
     
 - how to declare Bean?
     - different between `@Component vs @Bean`?
