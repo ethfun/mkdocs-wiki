@@ -18,6 +18,7 @@ nav:
         - Q/A: 'notes/tech/spring/spring.md'
         - ioc: 'notes/tech/spring/IOC.md'
         - bean: 'notes/tech/spring/Bean.md'
+      - logback: 'notes/tech/logback.md'
     - Posts:
       - mvp: 'reading-radar/Making sense of MVP.md'
       - deep-understanding: 'reading-radar/Will deep understanding still be valuable.md'
