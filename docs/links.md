@@ -19,18 +19,19 @@
 - [ThoughtWorks洞见](https://insights.thoughtworks.cn/)
 - [gamestorming](https://gamestorming.com/)
 - [stackoverflow-blog](https://stackoverflow.blog/)
+- [highscalability](http://highscalability.com/all-time-favorites/)
 
 ### Tech
-- [highscalability](http://highscalability.com/all-time-favorites/)
-- [layout](https://muuri.dev/)
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
     - [Flexbox-layout](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+
 
 
 ### Emoji
 - [emojipedia](https://emojipedia.org/)
 
 ### Tools
+- [layout](https://muuri.dev/)
 - [quickchart](https://quickchart.io/)
 - [new-project-checklist](https://phodal.github.io/new-project-checklist/)
 
@@ -41,6 +42,7 @@
 - [华夏ERP](https://github.com/jishenghua/jshERP)
 - [小象商城](https://github.com/xiaoxiangopen/xiaoxiangb2b2c)
 - [后台ADMIN](https://github.com/yangzongzhuan/RuoYi)
+- [crowd-admin](https://github.com/wayn111/crowd-admin)
 
 ### miscellaneous
 - [keycode](https://keycode.info/)

@@ -1,63 +1,72 @@
+ ![Bean initialization step](https://i.stack.imgur.com/gL8Ky.jpg)  
 
-### Q/A
+!!! faq
 
-- how many ways to definite bean?
-    - XML file
-    - Properties file
-    - Annotation based config
-    - Java based config
+    === "how many ways to definite bean ?"
+        - XML file
+        - Properties file
+        - Annotation based config
+        - Java based config
     
-- how to declare Bean?
-    - different between `@Component vs @Bean`?
-        - [Spring: @Component versus @Bean](https://stackoverflow.com/questions/10604298/spring-component-versus-bean)
-    - different between Java based Configuration vs Annotation based Configuration？
-        - [Java-based vs annotation-based configuration/autowiring](https://stackoverflow.com/questions/41615041/java-based-vs-annotation-based-configuration-autowiring)
+    === "how to declare Bean ?"
+        - different between `@Component vs @Bean`?
+            - [Spring: @Component versus @Bean](https://stackoverflow.com/questions/10604298/spring-component-versus-bean)
+        - different between Java based Configuration vs Annotation based Configuration？
+            - [Java-based vs annotation-based configuration/autowiring](https://stackoverflow.com/questions/41615041/java-based-vs-annotation-based-configuration-autowiring)
+        
+    === "how many strategies for creating bean instances?"
+        - `InstantiationStrategy`
+        
 
-- different between `BeanFactoryPostProcessor` and `BeanFactoryPostProcessor`?
-    - [ref](https://www.cnblogs.com/duanxz/p/3750725.html)
-    
-- how many strategies for creating bean instances?
+!!! faq-bfpp-bpp
 
-- Spring Container loading process ?
-    - creating bean factory(default `DefaultListableBeanFactory`) 
-        - setting InstantiationStrategy
-        - reading and loading/register bean definition 
-    - configure factory context
-        - ClassLoader
-        - PropertyEditorRegistrar
-        - Spring expression resolver
-        - ignore dependency interface
-        - register resolvable type
-        - Register early post-processor `BeanPostProcessor`
-        - detect LoadTimeWeaver and prepare for weaving
-        - register default environment bean
-    - Spring 容器自带的 `postProcessBeanFactory(beanFactory)` method
-        - All bean definitions will have been loaded, but no beans will have been instantiated yet
-    - register bean that implement `BeanFactoryPostProcessor` interface
-        - `postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory);`
-        - Factory hook that allows for custom modification of an application context's bean definitions, adapting the bean property values of the context's underlying bean factory.
-        - All bean definitions will have been loaded, but no beans will have been instantiated yet
-        - Invoke `BeanDefinitionRegistryPostProcessors` first (implement PriorityOrdered => implement Ordered => regular)
-        - `BeanFactoryPostProcessor` that implement PriorityOrdered => implement `Ordered` => regular implement `BeanFactoryPostProcessor` only
-    - register bean that implement `BeanPostProcessor` interface
-        - Factory hook that allows for custom modification of new bean instances 
-        - Apply `postProcessBeforeInitialization` method to the given new bean instance before any bean initialization callbacks
-        - Apply `postProcessAfterInitialization` to the given new bean instance after any bean initialization callback
-        - register `BeanPostProcessors` that implement `PriorityOrdered` => implement `Ordered` => regular implement `BeanPostProcessor` only
-    - Instantiate all non-lazy-init singletons.
-        - `finishBeanFactoryInitialization(beanFactory)` => `beanFactory.preInstantiateSingletons()` 
-    
+    === "different between `BeanFactoryPostProcessor` and `BeanPostProcessor`?"
+        - [ref](https://www.cnblogs.com/duanxz/p/3750725.html)
+    === "`BeanFactoryPostProcessor` used for bootstrapping processing ?"
+        - `ConfigurationClassPostProcessor`
+            - Registered by default when using `<context:annotation-config/>` or `<context:component-scan/>`.
+            - This post processor is priority-ordered as it is important that any `@Bean` methods declared in `@Configuration` classes have their corresponding bean definitions registered before any other `BeanFactoryPostProcessor` executes.
+
+    === "`BeanPostProcessor` used for bootstrapping processing or mainly for internal use ?"
+        - `MergedBeanDefinitionPostProcessor`
+        - `InstantiationAwareBeanPostProcessor`
+            - `SmartInstantiationAwareBeanPostProcessor`
+
+!!! faq-spring-loading
+        
+    === "Spring Container loading process ?"
+        - creating bean factory(default `DefaultListableBeanFactory`) 
+            - setting InstantiationStrategy
+            - reading and loading/register bean definition 
+        - configure factory context
+            - ClassLoader
+            - PropertyEditorRegistrar
+            - Spring expression resolver
+            - ignore dependency interface
+            - register resolvable type
+            - Register early post-processor `BeanPostProcessor`
+            - detect LoadTimeWeaver and prepare for weaving
+            - register default environment bean
+        - Spring 容器自带的 `postProcessBeanFactory(beanFactory)` method
+            - All bean definitions will have been loaded, but no beans will have been instantiated yet
+        - register bean that implement `BeanFactoryPostProcessor` interface
+            - `postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory);`
+            - Factory hook that allows for custom modification of an application context's bean definitions, adapting the bean property values of the context's underlying bean factory.
+            - All bean definitions will have been loaded, but no beans will have been instantiated yet
+            - Invoke `BeanDefinitionRegistryPostProcessors` first (implement PriorityOrdered => implement Ordered => regular)
+            - `BeanFactoryPostProcessor` that implement PriorityOrdered => implement `Ordered` => regular implement `BeanFactoryPostProcessor` only
+        - register bean that implement `BeanPostProcessor` interface
+            - Factory hook that allows for custom modification of new bean instances 
+            - Apply `postProcessBeforeInitialization` method to the given new bean instance before any bean initialization callbacks
+            - Apply `postProcessAfterInitialization` to the given new bean instance after any bean initialization callback
+            - register `BeanPostProcessors` that implement `PriorityOrdered` => implement `Ordered` => regular implement `BeanPostProcessor` only
+        - Instantiate all non-lazy-init singletons.
+            - `finishBeanFactoryInitialization(beanFactory)` => `beanFactory.preInstantiateSingletons()` 
+        
+        
+      
 - what is Java Flight Recorder?
 
-- `BeanFactoryPostProcessor` used for bootstrapping processing ?
-    - `ConfigurationClassPostProcessor`
-        - Registered by default when using `<context:annotation-config/>` or `<context:component-scan/>`.
-        - This post processor is priority-ordered as it is important that any `@Bean` methods declared in `@Configuration` classes have their corresponding bean definitions registered before any other `BeanFactoryPostProcessor` executes.
-
-- `BeanPostProcessor` used for bootstrapping processing or mainly for internal use ?
-    - `MergedBeanDefinitionPostProcessor`
-    - `InstantiationAwareBeanPostProcessor`
-        - `SmartInstantiationAwareBeanPostProcessor`
 
 
 ### Reference

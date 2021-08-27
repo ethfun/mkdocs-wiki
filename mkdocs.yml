@@ -15,7 +15,7 @@ nav:
         - agile: 'notes/tech/presentation/agile.md'
         - test: 'notes/tech/presentation/test.md'
       - spring:
-        - Q/A: 'notes/tech/spring/spring.md'
+        - spring-faq: 'notes/tech/spring/spring.md'
         - ioc: 'notes/tech/spring/IOC.md'
         - bean: 'notes/tech/spring/Bean.md'
       - logback: 'notes/tech/logback.md'
