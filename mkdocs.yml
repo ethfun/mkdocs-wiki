@@ -11,6 +11,8 @@ nav:
     - explore: 'exploration/explore.md'
   - Notes:
     - Tech:
+      - Architecture:
+        - microservice: 'notes/tech/architecture/microservice.md'
       - presentation:
         - agile: 'notes/tech/presentation/agile.md'
         - test: 'notes/tech/presentation/test.md'
