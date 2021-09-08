@@ -1,8 +1,8 @@
 site_name: To Collect & To Construct & To Explore 😋🥝🥭🍉🍒🍍🤪️6️⃣
 site_url: https://example.com/
 
-repo_url: https://github.com/squidfunk/mkdocs-material
-repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/ethfun/mkdocs-wiki.git
+repo_name: mkdocs-wiki
 
 
 nav:
@@ -11,6 +11,8 @@ nav:
     - explore: 'exploration/explore.md'
   - Notes:
     - Tech:
+      - network:
+          - tcp/ip: 'notes/tech/network/TCP_IP.md'
       - Architecture:
         - microservice: 'notes/tech/architecture/microservice.md'
       - presentation:

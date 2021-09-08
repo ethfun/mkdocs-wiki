@@ -16,6 +16,8 @@
         
     === "how many strategies for creating bean instances?"
         - `InstantiationStrategy`
+    
+    === "Spring Injection type vs bean instances strategy?"
         
 
 !!! faq-bfpp-bpp

@@ -90,3 +90,5 @@
 - [Introduction to Microservices](https://www.nginx.com/blog/introduction-to-microservices/)
 - [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes)
 - [Event sourcing](https://github.com/cer/event-sourcing-examples/wiki/WhyEventDrivenArch)
+- [A plain English introduction to CAP theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
+- [How To Design Great APIs With API-First Design](https://www.programmableweb.com/news/how-to-design-great-apis-api-first-design-and-raml/how-to/2015/07/10)
