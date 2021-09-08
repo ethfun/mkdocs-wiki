@@ -47,7 +47,7 @@
         - BASE - basically available, soft state, eventually consistent
         - Event sourcing
    
-### Tech Stack List
+- Tech Stack List
     - API GateWay: Spring Gateway/Zuul
     - Service Discovery/LB: Eureka/Zookeeper
     - Service Deployment/Scale: Git/Jenkins/Docker/Kubernetes
@@ -56,7 +56,8 @@
     - Log: ELK Stash(Elasticsearch/Logstash/kibana) 
     - Resilience & Fault Tolerance: Sentinal/Ribbon
     - Service Security: Spring Security
-
+    - Admin Monitor tools: SpringBoot Admin/Dubbo Admin
+    
     
 !!! fqa 
 
