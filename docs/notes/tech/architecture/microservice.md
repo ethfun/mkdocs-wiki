@@ -1,13 +1,22 @@
 
-### Infrastructure
-- Git
-- Maven
-- Jenkins
-- Docker
-- Kubernetes
+!!! Technology Mapping
+    
+    === "Microservices Concerns"
+        ![Microservices Concerns](https://developers.redhat.com/sites/default/files/styles/article_floated/public/blog/2016/12/screen-shot-2016-12-06-at-10-37-37.png?itok=N1fDqQ_y)
 
-
-### Components
+    === "Microservices Requirements"
+        ![Microservices Requirements](https://developers.redhat.com/sites/default/files/styles/article_floated/public/blog/2016/12/screen-shot-2016-12-06-at-10-30-08.png?itok=av35fUTQ)
+    
+    === "Microservices Stack"
+        ![Microservices Stack](https://developers.redhat.com/sites/default/files/styles/article_floated/public/blog/2016/12/stack-page-1.png?itok=xb7TvIHv)
+        
+    === "Infrastructure"
+        - Git
+        - Maven
+        - Jenkins
+        - Docker
+        - Kubernetes
+    
 !!! Abstract
     
     === "API Gateway, API-First Design"
@@ -36,14 +45,25 @@
     === "Event-Driven Data Management"
         - ACID transaction
         - BASE - basically available, soft state, eventually consistent
-        - [Event sourcing](https://github.com/cer/event-sourcing-examples/wiki/WhyEventDrivenArch)
-        
+        - Event sourcing
+   
+### Tech Stack List
+    - API GateWay: Spring Gateway/Zuul
+    - Service Discovery/LB: Eureka/Zookeeper
+    - Service Deployment/Scale: Git/Jenkins/Docker/Kubernetes
+    - Configuration management: Apollo/Spring Cloud config/Nacos
+    - Distributed Trace: Spring Sleuth/Zipkin
+    - Log: ELK Stash(Elasticsearch/Logstash/kibana) 
+    - Resilience & Fault Tolerance: Sentinal/Ribbon
+    - Service Security: Spring Security
+
     
 !!! fqa 
 
     === "Why to choose Microservices?"
         - Pros
             - to facilitate agile application development and deployment
+            - technoloy diversity
             - to tackles the problem of complexity
             - developed independently
             - deployed independently
@@ -67,3 +87,5 @@
             
 ---
 - [Introduction to Microservices](https://www.nginx.com/blog/introduction-to-microservices/)
+- [Spring Cloud for Microservices Compared to Kubernetes](https://developers.redhat.com/blog/2016/12/09/spring-cloud-for-microservices-compared-to-kubernetes)
+- [Event sourcing](https://github.com/cer/event-sourcing-examples/wiki/WhyEventDrivenArch)

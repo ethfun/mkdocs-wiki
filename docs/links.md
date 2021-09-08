@@ -3,6 +3,7 @@
 ![](https://pic2.zhimg.com/80/v2-5735bc20593ed2d6801167fdef84cabd_720w.jpg)
 
 ### Explore
+- [waitbutwhy](https://waitbutwhy.com)
 - [synthesia](https://www.synthesia.io/)
 - [waitbutwhy](https://waitbutwhy.com)
 - [frontendchecklist](https://frontendchecklist.io/)
@@ -32,6 +33,7 @@
 
 ### Tools
 - [layout](https://muuri.dev/)
+- [layout2](https://github.com/desandro/masonry)
 - [quickchart](https://quickchart.io/)
 - [new-project-checklist](https://phodal.github.io/new-project-checklist/)
 
