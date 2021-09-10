@@ -11,6 +11,8 @@ nav:
     - explore: 'exploration/explore.md'
   - Notes:
     - Tech:
+      - mq:
+          - rabbitmq: 'notes/tech/mq/RabbitMQ.md'
       - network:
           - tcp/ip: 'notes/tech/network/TCP_IP.md'
       - Architecture:
