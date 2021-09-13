@@ -20,7 +20,9 @@
 
 
 ### How to implement Exchange to exchange bindings in RabbitMQ?
+- Exchange-to-exchange bindings improve decoupling, increase topology flexibility, reduce binding churn, and help increase performance
 - https://www.cloudamqp.com/blog/exchange-to-exchange-binding-in-rabbitmq.html
+- http://skillachie.com/2014/06/27/rabbitmq-exchange-to-exchange-bindings-ampq/
 
 ### How to implement Dead letter queue/Delay task?
 - https://zoltanaltfatter.com/2016/09/06/dead-letter-queue-configuration-rabbitmq/
@@ -69,4 +71,13 @@
     
     === "Virtual Hosts" 
         - Multiple isolated "environments" 
-    
+  
+  
+ 
+### Refer
+ - [AMQP 0-9-1 Model Explained](https://www.rabbitmq.com/tutorials/amqp-concepts.html) 
+ - [Understanding AMQP, the protocol used by RabbitMQ](https://spring.io/blog/2010/06/14/understanding-amqp-the-protocol-used-by-rabbitmq/) 
+    - for learn to write
+ - [RabbitMQ for beginners - What is RabbitMQ?](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html) 
+ - [Routing Topologies for Performance and Scalability with RabbitMQ](https://spring.io/blog/2011/04/01/routing-topologies-for-performance-and-scalability-with-rabbitmq/) 
+  
