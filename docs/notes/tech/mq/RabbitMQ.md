@@ -2,7 +2,8 @@
 ### How to guarantee message delivery reliability?
 - Publisher confirm, publisher => Broker
 - Consumer acknowledge, Queue => Consumer
-    - When Consumers Fail or Lose Connection: Automatic Requeueing
+    - Manual Ack: When Consumers Fail or Lose Connection: Automatic Requeueing
+    - Automatic ACk: should be considered unsafe, consumers's TCP connection or channel is closed before successful delivery, the message sent by the server will be lost.
     - Acknowledgement mode and QoS prefetch value have significant effect on consumer throughput. 
 - Clustering
 - Resource Monitor & Alarms & Health Checks
